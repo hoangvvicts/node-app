@@ -4,7 +4,7 @@ const app = express();
 
 const PORT = 8000;
 
-app.get('/', (req, res) => res.send('The sailor'));
+app.get('/', (req, res) => res.send('The sailor Nodejs'));
 
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
