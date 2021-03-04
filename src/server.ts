@@ -4,7 +4,11 @@ const app = express();
 
 const PORT = 8000;
 
-app.get('/', (req, res) => res.send('The sailor Nodejs 3'));
+app.set('view engine', 'ejs');
+
+app.set('views', './src/views');
+
+app.get('/', (req, res) => res.render('index.ejs'));
 
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
