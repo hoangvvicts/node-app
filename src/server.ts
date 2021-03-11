@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-const PORT = 80;
+const PORT = 8000;
 
 app.set('view engine', 'ejs');
 
